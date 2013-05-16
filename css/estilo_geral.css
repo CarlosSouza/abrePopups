@@ -1,0 +1,129 @@
+/*
+  Cliente: 
+  Projeto: 
+
+  --------------
+  PADROES DE CODIGO - Frameworks FED v2.5
+  --------------
+
+  Nossos projetos sao desenvolvidos de acordo com um padrao de escrita.
+  Mais informacoes sobre ele em: http://www.webstandards.blog.br/checklist-para-desenvolvimento-css/
+  Qualquer duvida, mande um e-mail para: contato[at]webstandards.blog.br
+
+
+  --------------
+  PALETA DE CORES
+  --------------
+
+  #000000 - Textos
+*/
+
+
+/*
+  --------------
+  ELEMENTOS e CLASSES
+  --------------
+*/
+
+
+/* ------- ELEMENTOS ------- */
+
+  /* reset */
+  body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, dl, dd, ol, ul, menu, form, fieldset, legend, figure, section, summary { margin: 0; padding: 0; }
+  article, aside, details, summary, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+  button, fieldset, iframe, img { border: 0; }
+  input[type=search] { -webkit-appearance: textfield; -webkit-box-sizing: content-box; }
+  details summary::-webkit-details-marker { display: none; }
+  
+  html { font: 100% Arial, Helvetica, sans-serif; color: #000; }
+  body { font-size: .75em; } /* tamanho da fonte: 12px */
+
+  /* formulario */
+  form ol, form ul { list-style: none; }
+  form ol li { margin-bottom: .41em; padding: .41em 0; }
+  .ie6 form ol li { height: 1%; overflow: hidden; }
+  form #instrucoes_formulario { padding: 1.66em 0; }
+  form #instrucoes_formulario p { margin-bottom: .83em; }
+  form #instrucoes_formulario p:last-child { margin-bottom: 0; }
+
+    /* label */
+    form ol label, form ol p, form ol ol li:first-child label { float: left; width: 80px; padding-right: 10px; line-height: 2em; text-align: right; }
+
+    /* listas internas */
+    form ol ol, form ol ul, form ol li li { display: inline-block; vertical-align: top; }
+    .ie7 form ol ol, .ie7 form ol ul, .ie7 form ol li li, .ie6 form ol ol, .ie6 form ol ul, .ie6 form ol li li { display: inline; }
+    form ol li li { margin: 0 10px 0 0; padding: 0; }
+
+    /* label interno */
+    form ol li li label, form ol p.erro, form ol li.confirmacao label { float: none; width: auto; padding-right: 0; text-align: left; }
+    form ol ul li label { margin-right: 0; }
+
+    /* mensagem de erro */
+    form ol p.erro { display: block; }
+    .ie6 form ol p.erro { display: inline; float: left; }
+    form p.erro, form ol li.erro { color: #e33; }
+    form li.erro { border-radius: 3px; }
+    form li.erro, form input.erro, form textarea.erro { background-color: #f7cac9; }
+    form ol li li p.erro { margin-left: 0; }
+
+  form #instrucoes_formulario,
+  form ol li p.erro,
+  form ol ol li:first-child p.erro,
+  form ol li.confirmacao label,
+  form button { margin-left: 90px; }
+
+
+/* ------- CLASSES ------- */
+.limites { width: 980px; margin: 0 auto; }
+
+  /* alinhamentos */
+  .direita { float: right; }
+  .esquerda { float: left; }
+  p.direita, p.esquerda { float: none; }
+  p.direita { text-align: right; }
+  p.esquerda { text-align: left; }
+  .centro { text-align: center; }
+
+  /* paginacao */
+  .paginacao li { display: inline-block; }
+  .paginacao li a[rel="prev"], .paginacao li a[rel="next"] { }
+  .paginacao li a[rel="prev"]:hover, .paginacao li a[rel="next"]:hover { }
+
+  /* popup */
+  .popup { display: none; position: absolute; width: 300px; padding: 10px; border-radius: 10px; background: #fff; z-index: 10; }
+    #ver_video { width: auto; }
+  .popup a.fechar { float: right; }
+  .pelicula { position: absolute; z-index: 9; }
+
+  /* botoes */
+  a.botao, a.botao strong { display: inline-block; background: url(../images/botao.png) no-repeat; line-height: 25px; text-decoration: none; }
+  a.botao { padding-left: 10px; }
+  a.botao strong { padding-right: 10px; background-position: right 0; font-weight: normal; }
+  a.botao:hover { background-position: 0 0; }
+  a.botao:hover strong { background-position: right 0; }
+
+
+/*
+  --------------
+  ESTRUTURA
+  --------------
+*/
+
+
+/* ------- TOPO ------- */
+#topo { }
+
+
+/* ------- CONTEUDO ------- */
+#conteudo { }
+
+  /* coluna1 */
+  #conteudo #coluna1 { }
+
+  /* coluna2 */
+  #conteudo #coluna2 { }
+
+
+/* ------- RODAPE ------- */
+#rodape { }
+
