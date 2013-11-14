@@ -31,6 +31,19 @@
     
 */
 
+function fechaPopup() {
+
+  $('.popup a.fechar, .pelicula').remove();
+  
+  // se o video estiver aberto, remove sua popup; caso contrario esconde as popups genericas
+  if($('aside#ver_video').get(0)){
+    $('aside#ver_video').remove();
+  } else {
+    $('.popup').hide();
+  }
+  
+}
+
 var popup;
 var alturaJanela;
 var alturaBody;
@@ -38,6 +51,8 @@ var alturaPopup;
 var larguraPopup;
 
 function abrePopups(url, tipo) {
+
+  fechaPopup();
   
   switch(tipo) {
     // caso seja video, a popup se identifica pelo id "ver_popup"
@@ -106,19 +121,6 @@ function abrePopups(url, tipo) {
     pelicula.css('padding-top', diferenca);
   }
 
-}
-
-function fechaPopup() {
-
-  $('.popup a.fechar, .pelicula').remove();
-  
-  // se o video estiver aberto, remove sua popup; caso contrario esconde as popups genericas
-  if($('aside#ver_video').get(0)){
-    $('aside#ver_video').remove();
-  } else {
-    $('.popup').hide();
-  }
-  
 }
 
 // definindo as medidas da janela
