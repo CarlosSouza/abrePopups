@@ -1,6 +1,6 @@
 /*
   ----
-    abrePopups v1.1
+    abrePopups v1.2
   ----
   
   
